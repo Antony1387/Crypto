@@ -1,0 +1,130 @@
+.modal {
+    margin: 40px 0;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: default;
+    text-align: left;
+    white-space: normal;
+    visibility: hidden;
+    opacity: 0;
+    width: 100%;
+    max-width: 688px;
+}
+
+.modal__open {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.36s ease-in-out, visibility 0.36s ease-in-out;
+}
+
+.modal__container {
+    position: relative;
+    max-width: 658px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 8px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 20px 20px 45px;
+}
+
+.modal__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: #55c2ff;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.modal__person {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    margin-bottom: 27px;
+}
+
+.modal__label {
+    display: block;
+    flex-grow: 1;
+    width: 100%;
+    font-family:  'IBM Plex Sans';
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    color: #858585;
+    margin-right: 16px;
+}
+
+.modal__label:last-child {
+    margin-right: 0;
+}
+
+.modal__input {
+    display: block;
+    width: 100%;
+    border: 1px solid #68b7ff;
+    border-radius: 8px;
+    height: 36px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+}
+
+.modal__order {
+    display: block;
+    margin: 0 auto;
+    max-width: 232px;
+    width: 100%;
+    padding: 11px 41px;
+    background: #55c2ff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #ffff;
+}
+
+.modal__close {
+    position: absolute;
+    right: 14px;
+    top: 14px;
+    border: none;
+    background-color: transparent;
+    line-height: 0;
+    color: #55c2ff;
+}
+
+@media (max-width: 480px) {
+.modal__container {
+    padding: 20px 13px 36px;
+}
+
+    .modal__title {
+        font-size: 22px;
+        line-height: 27px;
+        margin-bottom: 10px;
+    }
+    .modal__person {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .modal__label {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    .modal__label:last-child {
+        margin-bottom: 0;
+    }
+
+    .modal__close {
+        right: 0;
+        top: -2px;
+        transform: translateY(calc(-100%));
+    }
+}

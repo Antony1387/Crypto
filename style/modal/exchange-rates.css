@@ -1,0 +1,58 @@
+.exchange-rates {
+    padding: 10px 13px 30px;
+    background-color: #E4F2FF;
+    border-radius: 10px;
+  }
+  
+  .exchange-rates__title {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 120%;
+    color: #265D77;
+    margin-bottom: 20px;
+  }
+  
+  .exchange-rates__list {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #265D77;
+  }
+  
+  .exchange-rates__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  
+  .exchange-rates__item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .exchange-rates__item:after {
+    content: '';
+    display: block;
+    width: 9px;
+    height: 8px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  .exchanges__item-up:after {
+    background-image: url('../../img/up.svg');
+  }
+  
+  .exchanges__item-down:after {
+    background-image: url('../../img/down.svg');
+  }
+  
+  .exchange-rates__currency {
+    margin-right: auto;
+  }
+  
+  .exchange-rates__value {
+    display: block;
+    margin-right: 5px;
+  }

@@ -1,0 +1,94 @@
+.hero {
+    background-color: #000;
+    background-image: url("../../img/background.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .hero__container {
+    padding-top: 127px;
+    padding-bottom: 127px;
+  }
+  
+  .hero__title {
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 121px;
+    color: #55C2FF;
+    margin-bottom: 18px;
+  }
+  
+  .hero__subtitle {
+    max-width: 480px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 29px;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+  }
+  
+  .hero__btn {
+    background-color: #55C2FF;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    padding: 11px 41px;
+    max-width: 232px;
+    width: 100%;
+    border: none;
+  }
+  
+  @media (max-width: 1024px) {
+    .hero__container {
+      padding-top: 92px;
+      padding-bottom: 92px;
+    }
+  
+    .hero__subtitle {
+      margin-bottom: 30px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero__container {
+      padding-top: 81px;
+      padding-bottom: 81px;
+    }
+  
+    .hero__title {
+      font-size: 60px;
+      line-height: 73px;
+      margin-bottom: 10px;
+    }
+  
+    .hero__subtitle {
+      font-size: 16px;
+      line-height: 21px;
+      max-width: 354px;
+      margin-bottom: 24px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero__container {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  
+    .hero__title {
+      font-size: 40px;
+      line-height: 48px;
+    }
+  
+    .hero__subtitle {
+      max-width: 230px;
+    }
+  
+    .hero__btn {
+      max-width: 188px;
+      padding: 10px 30px;
+    }
+  }
