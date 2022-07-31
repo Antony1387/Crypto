@@ -1,0 +1,12 @@
+@import "normalize.css";
+@import "fonts.css";
+@import "default.css";
+@import "modal/header.css";
+@import "modal/navigation.css";
+@import "modal/hero.css";
+@import "modal/about-us.css";
+@import "modal/advantage.css";
+@import "modal/exchange-rates.css";
+@import "modal/faq.css";
+@import "modal/modal.css";
+@import "modal/footer.css";
